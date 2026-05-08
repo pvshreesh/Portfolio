@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Poojari Venkata Shreesh, an MSCS student applying for SDE and ML/AI roles with full-stack and D3 projects.">
+    <title>Poojari Venkata Shreesh | SDE + ML/AI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="Go to home">
+            <span class="brand-mark">PVS</span>
+            <span>Full-Time Portfolio</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#work">Work</a>
+            <a href="#visual-stack">Toolkit</a>
+            <a href="#experience">Journey</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero-section">
+            <div class="hero-copy">
+                <p class="eyebrow">MSCS student applying for SDE and ML/AI roles</p>
+                <h1>I like building products that are clear, useful, and easy to explain.</h1>
+                <p class="hero-lede">
+                    I'm Poojari Venkata Shreesh, an MS Computer Science student at Arizona State University.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#work">View all projects</a>
+                    <a class="button secondary" href="assets/Poojari-Venkata-Shreesh-Resume.pdf">View resume</a>
+                </div>
+                <dl class="stat-strip">
+                    <div>
+                        <dt data-count="6">0</dt>
+                        <dd>projects shown from resume and portfolio</dd>
+                    </div>
+                    <div>
+                        <dt data-count="2">0</dt>
+                        <dd>target roles: SDE and ML/AI</dd>
+                    </div>
+                    <div>
+                        <dt data-count="1">0</dt>
+                        <dd>MSCS degree in progress</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="hero-footer" aria-label="Portfolio entry point">
+            <p>Open the full site for projects, story, experience, and contact.</p>
+            <a class="button primary hero-cta" href="#work">Know more</a>
+        </section>
+
+        <!-- <section class="section intro-band" aria-label="Professional positioning">
+            <div class="intro-text">
+                <p class="eyebrow">Positioning</p>
+                <h2>Student portfolio tuned for full-time SDE and ML/AI recruiting.</h2>
+            </div>
+            <p>
+                I focus on projects that show breadth and execution: backend systems, AI workflows, frontend polish, and D3 storytelling. The goal is simple: make the strongest possible case for a full-time software engineering or ML/AI role.
+            </p>
+        </section> -->
+
+        <section id="work" class="section work-section">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Projects</h2>
+            </div>
+            <div class="hero-visual" aria-label="Animated D3 skill network">
+                <div class="visual-toolbar">
+                    <span>Simulation</span>
+                    <span>drag nodes</span>
+                </div>
+                <svg id="work-network" role="img" aria-label="Interactive network connecting projects, skills, and outcomes"></svg>
+            </div>
+            <div class="work-layout">
+                <aside class="project-filter" aria-label="Project filters">
+                    <button class="filter-btn active" type="button" data-filter="all">All</button>
+                    <button class="filter-btn" type="button" data-filter="sde">SDE</button>
+                    <button class="filter-btn" type="button" data-filter="mlai">ML/AI</button>
+                    <button class="filter-btn" type="button" data-filter="d3">D3</button>
+                    <button class="filter-btn" type="button" data-filter="systems">Systems</button>
+                </aside>
+                <div class="project-stage">
+                    <svg id="project-bubbles" role="img" aria-label="Interactive project bubble chart"></svg>
+                    <div id="project-details" class="project-details" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visual-stack" class="section stack-section">
+            <div class="section-heading">
+                <p class="eyebrow">Capability Map</p>
+                <h2>The toolkit behind the full-time candidate profile.</h2>
+            </div>
+            <div class="stack-grid">
+                <div class="chart-panel">
+                    <div class="panel-heading">
+                        <h3>Skill intensity</h3>
+                        <p>Weighted from project depth, stack variety, and production-minded implementation.</p>
+                    </div>
+                    <svg id="skill-radar" role="img" aria-label="Radar chart of data visualization skills"></svg>
+                </div>
+                <div class="capability-list">
+                    <article>
+                        <span>01</span>
+                        <h3>Software engineering</h3>
+                        <p>REST APIs, auth flows, state management, and reliable application structure for real-world product work.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>ML / AI workflows</h3>
+                        <p>LLM-assisted planning, OCR and retrieval pipelines, graph-backed workflows, and prompt-to-structure systems.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h3>D3 and frontend craft</h3>
+                        <p>Interactive charts, scrollytelling, responsive layouts, and clear visual hierarchy that make work easy to review.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section timeline-section">
+            <div class="section-heading">
+                <p class="eyebrow">Timeline</p>
+                <h2>Education, projects, and full-time readiness.</h2>
+            </div>
+            <div class="timeline-wrap">
+                <svg id="career-timeline" role="img" aria-label="Career timeline"></svg>
+            </div>
+        </section>
+
+        <section class="section proof-section">
+            <div class="proof-card">
+                <p class="eyebrow">Signature Case Study</p>
+                <h2>travelMate: an AI-assisted travel planning platform.</h2>
+                <p>
+                    Built a chat-first travel planning product with a Next.js frontend, FastAPI backend, Gemini-powered planning state extraction, Google Places and Routes integrations, and a structured itinerary flow that feels ready for a full-time product environment.
+                </p>
+                <div class="mini-metrics" aria-label="travelMate project metrics">
+                    <span>Next.js + FastAPI</span>
+                    <span>Gemini + Google APIs</span>
+                    <span>chat-first UX</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div>
+                <p class="eyebrow">Contact</p>
+                <h2>Open to full-time SDE and ML/AI roles.</h2>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:pvshreesh6@gmail.com">pvshreesh6@gmail.com</a>
+                <a href="tel:+16028804792">+1 602 880 4792</a>
+                <a href="https://github.com/pvshreesh" target="_blank" rel="noreferrer">github.com/pvshreesh</a>
+                <a href="https://linkedin.com/in/pv-shreesh" target="_blank" rel="noreferrer">linkedin.com/in/pv-shreesh</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>Built as a full-time candidate portfolio for Poojari Venkata Shreesh.</span>
+        <span>Available for full-time roles</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
