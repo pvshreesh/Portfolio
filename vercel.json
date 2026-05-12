@@ -1,0 +1,8 @@
+{
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "env": {}
+}
