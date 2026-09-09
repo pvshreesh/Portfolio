@@ -1,5 +1,7 @@
 # Final quality pass
 
+Production is now available at https://portfolio-pink-nu-41.vercel.app. The production browser check passed at 1440, 768, and 390px: HTTPS, refresh, navigation, architecture stages, disclosures, accessibility scans, image/font/CSS/JavaScript loading, and resume opening. No browser errors were recorded. Public assets match the approved files; development files return 404. GitHub links returned 200; LinkedIn blocks automated access with 999. See DEPLOYMENT.md for deployment details and the remaining optional GitHub auto-deployment connection.
+
 Validated September 8, 2026. Run `npm ci` followed by `npm test` to reproduce the browser checks. Run `npm run build` to prepare deployment files.
 
 ## Results

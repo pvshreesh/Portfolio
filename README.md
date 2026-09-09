@@ -1,5 +1,7 @@
 # Venkata Shreesh Poojari - Portfolio
 
+**Live:** https://portfolio-pink-nu-41.vercel.app
+
 Static HTML, CSS, and JavaScript portfolio. Production needs no application server, environment variables, or runtime dependencies.
 
 ## Local preview
@@ -12,7 +14,7 @@ Run `npm run build`. This only copies the approved site files and assets into `d
 
 ## Vercel
 
-Import [pvshreesh/Portfolio](https://github.com/pvshreesh/Portfolio) into your Vercel account. Use the repository root and production branch `main`. The existing `vercel.json` supplies the settings:
+The production project is `portfolio-72d1/portfolio`. It uses the repository root; `main` is the GitHub production branch. The existing `vercel.json` supplies the settings:
 
 - Framework: Other
 - Install command: skipped
@@ -20,7 +22,7 @@ Import [pvshreesh/Portfolio](https://github.com/pvshreesh/Portfolio) into your V
 - Output directory: `dist`
 - Environment variables: none
 
-Vercel provides an HTTPS production URL. No routing rewrite is needed: all sections use hash navigation. See [DEPLOYMENT.md](DEPLOYMENT.md) for authorization and verification steps.
+No routing rewrite is needed: all sections use hash navigation. The initial production deployment was published through the authenticated CLI. Automatic GitHub deployments still require granting the Vercel GitHub integration access to this repository and connecting it in [project Git settings](https://vercel.com/portfolio-72d1/portfolio/settings/git). See [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## Tests
 
@@ -29,7 +31,7 @@ Run `npm ci`, then `npm test`. The browser checks use installed Google Chrome. A
 After publishing, run:
 
 ```sh
-npm run test:production -- https://YOUR-PRODUCTION-DOMAIN.vercel.app
+npm run test:production -- https://portfolio-pink-nu-41.vercel.app
 ```
 
 The production check validates HTTPS, asset bytes, refresh, navigation, project interactions, mobile layout, PDF access, links, and browser errors. LinkedIn may block automated checks; verify that profile in a normal browser when reported. Evidence is saved locally under ignored `test-results/`.
