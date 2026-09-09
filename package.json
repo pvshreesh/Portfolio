@@ -1,20 +1,20 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "D3 portfolio website for Poojari Venkata Shreesh - MSCS student applying for SDE and ML/AI roles",
-  "main": "index.html",
+  "name": "venkata-shreesh-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Engineering portfolio of Venkata Shreesh Poojari — Full Stack and AI Engineer",
   "scripts": {
-    "dev": "python -m http.server 8000",
-    "start": "python -m http.server 8000"
+    "dev": "node server.mjs",
+    "build": "node build.mjs",
+    "test": "node tests/portfolio.mjs",
+    "test:production": "node tests/production.mjs"
   },
-  "keywords": [
-    "portfolio",
-    "d3",
-    "visualization",
-    "sde",
-    "mlai",
-    "full-stack"
-  ],
-  "author": "Poojari Venkata Shreesh",
-  "license": "MIT"
+  "engines": {
+    "node": "22.x"
+  },
+  "author": "Venkata Shreesh Poojari",
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "playwright": "1.63.0"
+  }
 }
